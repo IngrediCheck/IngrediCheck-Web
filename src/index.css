@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+font-family: "Inter", sans-serif;
+font-family: "Fredoka", sans-serif;
+*/
+
+@layer {
+  html {
+    @apply !text-[62.5%] scroll-smooth;
+    /* 1rem = 10px */
+  }
+  bodY {
+    @apply font-inter bg-orang/20 bg-[url(/bgs/lineBg.svg)];
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* Navbar */
+
+.nav-links {
+  @apply text-[1.6rem] text-dark-light capitalize font-medium duration-75 transition-all hover:text-dark;
+}
+.mb-nav-links {
+  @apply nav-links !text-[#3B5266];
+}
+.active {
+  @apply text-[#3B5266] md:text-dark font-bold;
+}
