@@ -6,7 +6,7 @@ import AboutMission from "../components/screen/About/AboutMission";
 const About = () => {
   return (
     <>
-      <AboutBanner />
+      {/* <AboutBanner /> */}
       <AboutFounder />
       <AboutMission />
       <AboutContact />

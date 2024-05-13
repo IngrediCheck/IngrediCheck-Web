@@ -5,7 +5,7 @@ const AboutMission = () => {
         <div className="md:max-w-[78rem] mx-auto px-[1.6rem] lg:px-0">
           <div className="text-center">
             <h2 className="font-fredoka font-semibold text-[2.2rem] md:text-[3.65rem] text-green-dark">
-              Our Mission: Simplifying Your Grocery Shopping
+              My Mission: Simplifying Your Grocery Shopping
             </h2>
           </div>
           <div className="[&_p]:text-dark [&_p]:font-inter [&_p]:mt-[2.17rem] [&_p]:md:mt-[3.2rem] [&_p]:text-[1.4rem] [&_p]:md:text-[2rem] [&_p]:leading-[2.02rem] [&_p]:md:leading-[3.2rem]">

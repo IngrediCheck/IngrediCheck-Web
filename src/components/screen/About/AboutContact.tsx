@@ -13,8 +13,10 @@ const AboutContact = () => {
           </h3>
           <div className="max-w-[87.8rem] mx-auto">
             <p className="text-white mt-[2.17rem] md:mt-[3.2rem] text-[1.4rem] md:text-[2rem] leading-[3.2rem]">
-              To get in contact for any other reason (feedback, issues,
-              high-fives), send me a brief message at <Link to='mailto:hello@ingredicheck.co' className="underline">hello@ingredicheck.co</Link>
+              For help with any Issues, email me at <Link to='mailto:support@ingredicheck.app' className="underline">support@ingredicheck.app</Link>.
+            </p>
+            <p className="text-white mt-[2.17rem] md:mt-[3.2rem] text-[1.4rem] md:text-[2rem] leading-[3.2rem]">
+              Send me any Feedback or High-Fives at <Link to='mailto:hello@ingredicheck.app' className="underline">hello@ingredicheck.app</Link>.
             </p>
             <p className="text-white mt-[2.17rem] md:mt-[3.2rem] text-[1.4rem] md:text-[2rem] leading-[3.2rem]">
               I'd love to hear from you! Every little detail matters, so please

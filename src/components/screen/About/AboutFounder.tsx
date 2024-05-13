@@ -7,7 +7,7 @@ const AboutFounder = () => {
         <div className="md:max-w-[78rem] mx-auto py-[5.6rem] md:pt-[6.9rem] md:pb-[14.5rem] px-[1.6rem] lg:px-0 [&_p]:text-dark [&_p]:mt-[2.17rem] [&_p]:md:mt-[3.2rem] [&_p]:text-[1.4rem] [&_p]:md:text-[2rem] [&_p]:leading-[2.02rem] [&_p]:md:leading-[3.2rem]">
           <div className="text-center">
             <h2 className="font-fredoka font-semibold text-[2.2rem] md:text-[3.65rem] text-green-dark">
-              About the founder
+              About me
             </h2>
           </div>
           <div className="text-center">
@@ -18,23 +18,23 @@ const AboutFounder = () => {
               <img src={founderImage} alt="founderImage" className="mx-auto" />
             </div> */}
             <p>
-              <span className="font-bold">Sanket Patel</span>, Founder of
-              IngrediCheck{" "}
+              <span className="font-bold">Sanket Patel</span>, Creator of
+              IngrediCheck App{" "}
             </p>
           </div>
           <div>
             <p>
-              After spending 16 years as a software engineer at Microsoft, I
+              after spending 16 years as a software engineer at microsoft, i
               decided to channel my energy into creating something meaningful
-              for people like us. Living in Seattle with my wife and two kids, I
+              for people like us. living in seattle with my wife and two kids, i
               wanted to make grocery shopping easier and safer for families
-              dealing with dietary restrictions. IngrediCheck is my way of
-              helping out, and I hope it makes a difference in your life too.
+              dealing with dietary restrictions. ingredicheck is my way of
+              helping out, and i hope it makes a difference in your life too.
             </p>
             <p>
-              Teaming up with the folks at StudioSalt for design, we've worked
+              teaming up with the folks at studiosalt for design, we've worked
               hard to make an app that's not just functional but also a joy to
-              use. Here's to making grocery shopping a little less stressful and
+              use. here's to making grocery shopping a little less stressful and
               a lot more fun!
             </p>
           </div>
@@ -44,4 +44,4 @@ const AboutFounder = () => {
   );
 };
 
-export default AboutFounder;
+export default aboutfounder;
