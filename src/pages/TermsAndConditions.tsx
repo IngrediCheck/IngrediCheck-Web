@@ -1,4 +1,4 @@
-const TramsAndCondition = () => {
+const TermsAndConditions = () => {
   return (
     <>
       <section className=" flex flex-col items-center justify-center">
@@ -9,4 +9,4 @@ const TramsAndCondition = () => {
     </>
   );
 };
-export default TramsAndCondition;
+export default TermsAndConditions;

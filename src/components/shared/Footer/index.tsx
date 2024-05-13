@@ -47,7 +47,7 @@ const Footer = () => {
             Copyright © 2024 Ingredicheck All Rights Reserved
           </p>
           <div className="font-semibold text-light-dark flex gap-[2.4rem] md:gap-[3.8rem] flex-col md:flex-row text-center">
-            <Link to="/trams-condition">Terms & Conditions</Link>
+            <Link to="/terms-conditions">Terms & Conditions</Link>
             <Link to="/privacy-policy">Privacy Policy</Link>
           </div>
         </div>

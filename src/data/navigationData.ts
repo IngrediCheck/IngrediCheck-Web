@@ -28,6 +28,6 @@ export const navigationData: navigationDataType[] = [
   {
     id: "5er",
     title: "Terms",
-    link: "/trams-condition",
+    link: "/terms-conditions",
   },
 ];
