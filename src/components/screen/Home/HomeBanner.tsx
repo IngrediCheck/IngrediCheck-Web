@@ -26,9 +26,11 @@ const HomeBanner = () => {
               <a href="#">
                 <img src={appStore} alt="appStore" />
               </a>
+            {/*
               <a href="#">
                 <img src={googlePlay} alt="googlePlay" />
               </a>
+            */}
             </div>
             <img
               src="/bgs/banenrBgArrow.svg"
