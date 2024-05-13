@@ -1,11 +1,11 @@
+import PrivacyNotice from "../components/screen/PrivacyPolicy/PrivacyNotice";
+import PrivacyTerms from "../components/screen/PrivacyPolicy/PrivacyTerms";
+
 const PrivacyPolicy = () => {
   return (
     <>
-      <section className=" flex flex-col items-center justify-center">
-        <h3 className="font-fredoka font-semibold text-inherit text-center text-[4rem] md:text-[6rem] text-green-dark">
-          Privacy & Policy
-        </h3>
-      </section>
+      <PrivacyNotice />
+      <PrivacyTerms />
     </>
   );
 };

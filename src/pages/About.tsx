@@ -1,11 +1,15 @@
+import AboutBanner from "../components/screen/About/AboutBanner";
+import AboutContact from "../components/screen/About/AboutContact";
+import AboutFounder from "../components/screen/About/AboutFounder";
+import AboutMission from "../components/screen/About/AboutMission";
+
 const About = () => {
   return (
     <>
-      <section className=" flex flex-col items-center justify-center">
-        <h3 className="font-fredoka font-semibold text-inherit text-center text-[4rem] md:text-[6rem] text-green-dark">
-          About
-        </h3>
-      </section>
+      <AboutBanner />
+      <AboutFounder />
+      <AboutMission />
+      <AboutContact />
     </>
   );
 };
