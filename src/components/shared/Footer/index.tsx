@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className="mt-[6.4rem] md:mt-[8rem] pt-[4rem] md:pt-[6.4rem] border-t border-dark flex items-center justify-between text-[1.8rem] flex-col-reverse md:flex-row">
           <p className="text-dark w-[23.8rem] md:w-auto text-center mt-[2.4rem] md:mt-0">
-            Copyright © 2024 Ingredicheck All Rights Reserved
+            © Copyright 2024 FUNGEE LLC. All rights reserved.
           </p>
           <div className="font-semibold text-light-dark flex gap-[2.4rem] md:gap-[3.8rem] flex-col md:flex-row text-center">
             <Link to="/terms-conditions">Terms & Conditions</Link>
