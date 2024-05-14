@@ -23,7 +23,7 @@ const HomeBanner = () => {
               The pain-free way to shop for everyone's tastes and dietary needs.
             </p>
             <div className="flex gap-[1.6rem] md:gap-[3.9rem]">
-              <a href="#">
+              <a href="https://apps.apple.com/us/app/ingredicheck/id6477521615">
                 <img src={appStore} alt="appStore" />
               </a>
             {/*
