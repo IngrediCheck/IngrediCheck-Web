@@ -26,7 +26,7 @@ const Footer = () => {
               );
             })}
             <li className="nav-links w-[14rem] text-center ">
-              <Link to="#" className="text-light-dark font-semibold">
+              <Link to="https://apps.apple.com/us/app/ingredicheck/id6477521615" className="text-light-dark font-semibold">
                 Download
               </Link>
             </li>

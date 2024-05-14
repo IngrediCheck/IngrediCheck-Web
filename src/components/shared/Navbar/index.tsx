@@ -32,7 +32,8 @@ const Navbar = () => {
                 );
               })}
               <li className="">
-                <button className="bg-green-light text-white text-[1.6rem] capitalize font-medium rounded-[3.2rem] w-[12.5rem] h-[5.4rem]">
+                <button className="bg-green-light text-white text-[1.6rem] capitalize font-medium rounded-[3.2rem] w-[12.5rem] h-[5.4rem]"
+                        onClick={() => window.location.href = 'https://apps.apple.com/us/app/ingredicheck/id6477521615'}>
                   Download
                 </button>
               </li>
@@ -62,8 +63,9 @@ const Navbar = () => {
             );
           })}
           <li className="w-full">
-            <button className="bg-green-light text-white text-[1.6rem] capitalize font-medium rounded-[3.2rem] w-full h-[5.4rem]">
-              Download
+            <button className="bg-green-light text-white text-[1.6rem] capitalize font-medium rounded-[3.2rem] w-[12.5rem] h-[5.4rem]"
+                    onClick={() => window.location.href = 'https://apps.apple.com/us/app/ingredicheck/id6477521615'}>
+                Download
             </button>
           </li>
         </ul>
