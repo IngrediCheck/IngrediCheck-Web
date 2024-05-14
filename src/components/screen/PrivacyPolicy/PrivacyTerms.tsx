@@ -1,4 +1,5 @@
 import { GoDotFill } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const PrivacyTerms = () => {
   return (
@@ -10,7 +11,7 @@ const PrivacyTerms = () => {
             <h3>I. Introduction</h3>
             <p className="mt-[3rem]">
               Welcome to blaz.ai. We are dedicated to maintaining the privacy
-              and protection of your personal data. This Privacy Notice outlines
+              and protection of your personal data. This Privacy Policy outlines
               the information we collect, how we use it, and your rights
               concerning that information.
             </p>
@@ -135,9 +136,9 @@ const PrivacyTerms = () => {
 
           {/* term 8 */}
           <div>
-            <h3>VIII. Changes to this Notice</h3>
+            <h3>VIII. Changes to this Policy</h3>
             <p className="mt-[3rem]">
-              We may periodically update this Privacy Notice. When changes are
+              We may periodically update this Privacy Policy. When changes are
               significant, we will notify users through the platform or via
               email.
             </p>
@@ -148,8 +149,8 @@ const PrivacyTerms = () => {
           <div>
             <h3>IX. Contact Us</h3>
             <p className="mt-[3rem]">
-              For any concerns or questions about this Privacy Notice or your
-              data, please reach out to us at:
+              For any concerns or questions about this Privacy Policy or your
+              data, please reach out to us at: <Link to='mailto:support@ingredicheck.app' className="underline">support@ingredicheck.app</Link>
             </p>
           </div>
           {/* term 9 */}
