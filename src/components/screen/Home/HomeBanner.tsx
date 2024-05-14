@@ -1,5 +1,5 @@
 import appStore from "../../../assets/images/i/appStore.svg";
-import googlePlay from "../../../assets/images/i/googlePlay.svg";
+// import googlePlay from "../../../assets/images/i/googlePlay.svg";
 const HomeBanner = () => {
   return (
     <section className="bg-[url(/bgs/homeBannerTemp.jpg)] bg-no-repeat bg-cover bg-center relative overflow-hidden">

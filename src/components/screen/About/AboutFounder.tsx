@@ -24,17 +24,17 @@ const AboutFounder = () => {
           </div>
           <div>
             <p>
-              after spending 16 years as a software engineer at microsoft, i
+              After spending 16 years as a software engineer at Microsoft, I
               decided to channel my energy into creating something meaningful
-              for people like us. living in seattle with my wife and two kids, i
+              for people like us. Living in Seattle with my wife and two kids, I
               wanted to make grocery shopping easier and safer for families
-              dealing with dietary restrictions. ingredicheck is my way of
-              helping out, and i hope it makes a difference in your life too.
+              dealing with dietary restrictions. IngrediCheck is my way of
+              helping out, and I hope it makes a difference in your life too.
             </p>
             <p>
-              teaming up with the folks at studiosalt for design, we've worked
+              Teaming up with the folks at StudioSalt for design, we've worked
               hard to make an app that's not just functional but also a joy to
-              use. here's to making grocery shopping a little less stressful and
+              use. Here's to making grocery shopping a little less stressful and
               a lot more fun!
             </p>
           </div>
@@ -44,4 +44,4 @@ const AboutFounder = () => {
   );
 };
 
-export default aboutfounder;
+export default AboutFounder;
