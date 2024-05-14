@@ -27,18 +27,18 @@ const Footer = () => {
             })}
             <li className="nav-links w-[14rem] text-center ">
               <Link to="#" className="text-light-dark font-semibold">
-                Download APP
+                Download
               </Link>
             </li>
           </ul>
           <div className="flex items-center gap-[3.7rem]">
             <FooterIcon
               icon={<FaTwitter fontSize={28} fill="#1B270C" />}
-              link="#"
+              link="https://twitter.com/realsanketp"
             />
             <FooterIcon
               icon={<FaTelegramPlane fontSize={28} fill="#1B270C" />}
-              link="#"
+              link="mailto:hello@ingredicheck.app"
             />
           </div>
         </div>
