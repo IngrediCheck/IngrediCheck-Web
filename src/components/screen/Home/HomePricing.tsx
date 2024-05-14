@@ -19,12 +19,12 @@ const HomePricing = () => {
             </div>
             <div className="text-[1.4rem] sm:text-[1.8rem] mt-[2.4rem] text-dark-dark2 leading-[3.4rem]">
               <p>
-                We are finalizing IngrediCheck's pricing to ensure it remains
+                I am finalizing IngrediCheck's pricing to ensure it remains
                 accessible and affordable. Please stay tuned for updates!
               </p>
               <p>
-                In the meantime, we highly value your feedback and encourage you
-                to share your thoughts with us.
+                In the meantime, I highly value your feedback and encourage you
+                to share your thoughts with me.
               </p>
             </div>
           </div>
