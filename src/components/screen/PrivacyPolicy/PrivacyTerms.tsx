@@ -64,6 +64,12 @@ const PrivacyTerms = () => {
             </p>
           </div>
           <div>
+            <h4>Cookies</h4>
+            <p className="mt-[2rem]">
+              We do not use Cookies on our Site or App.
+            </p>
+          </div>
+          <div>
             <h3>Information Usage</h3>
             <p className="mt-[2rem]">
                 We use the information we collect ("Personal Data") to operate and improve the Site, the App, and customer support.
