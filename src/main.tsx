@@ -4,6 +4,10 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./routes";
 import "./index.css";
 
+import { inject } from '@vercel/analytics';
+ 
+inject();
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
