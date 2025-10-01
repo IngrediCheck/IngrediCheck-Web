@@ -1,4 +1,9 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import {
+  JsonLd,
+  normalizeStructuredData,
+} from "../../utils/structuredData";
 
 interface SEOProps {
   title?: string;
@@ -8,18 +13,44 @@ interface SEOProps {
   url?: string;
   type?: string;
   author?: string;
+  structuredData?: JsonLd | JsonLd[];
 }
 
-const SEO = ({
+export default function SEO({
   title = "IngrediCheck - Smart Food Scanner for Dietary Restrictions",
   description = "Scan food labels instantly to check if they fit your dietary needs. IngrediCheck makes grocery shopping pain-free for everyone with dietary restrictions, allergies, and food preferences.",
   keywords = "food scanner, dietary restrictions, food allergies, grocery shopping, ingredient checker, food safety, dietary preferences, barcode scanner, food app",
   image = "https://ingredicheck.app/og-image.jpg",
   url = "https://ingredicheck.app",
   type = "website",
-  author = "FUNGEE LLC"
-}: SEOProps) => {
+  author = "FUNGEE LLC",
+  structuredData,
+}: SEOProps) {
   const fullTitle = title.includes("IngrediCheck") ? title : `${title} | IngrediCheck`;
+  
+  // Inject JSON-LD scripts directly into the DOM
+  useEffect(() => {
+    const structuredDataArray = normalizeStructuredData(structuredData);
+    const scripts: HTMLScriptElement[] = [];
+    
+    structuredDataArray.forEach((schema, index) => {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = `jsonld-${index}`;
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+      scripts.push(script);
+    });
+    
+    // Cleanup: remove scripts when component unmounts or data changes
+    return () => {
+      scripts.forEach(script => {
+        if (script.parentNode) {
+          script.parentNode.removeChild(script);
+        }
+      });
+    };
+  }, [structuredData]);
   
   return (
     <Helmet>
@@ -54,6 +85,4 @@ const SEO = ({
       <link rel="canonical" href={url} />
     </Helmet>
   );
-};
-
-export default SEO;
+}
