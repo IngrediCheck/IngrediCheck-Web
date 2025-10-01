@@ -11,7 +11,7 @@ const Footer = () => {
     <section className="bg-dark-dark2 rounded-t-[4rem] md:rounded-t-[8rem] pt-[6.4rem] pb-[4.1rem] md:pt-[8rem] md:pb-[6.4rem] md:mt-[14.4rem] lg:mt-[6.4rem]">
       <div className="container">
         <div className=" mx-auto flex flex-col items-center gap-[3.2rem] md:gap-[4rem]">
-          <img src={ingredCheckLogoWhite} alt="ingredCheck" />
+          <img src={ingredCheckLogoWhite} alt="IngrediCheck logo" />
           <ul className="flex items-center justify-center w-full flex-col md:flex-row gap-[2.4rem] md:gap-[4rem]">
             {navigationData.map((item: navigationDataType) => {
               return (

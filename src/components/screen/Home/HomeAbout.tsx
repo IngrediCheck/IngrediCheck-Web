@@ -16,7 +16,7 @@ const HomeAbout = () => {
           <div className="flex items-center justify-between flex-col md:flex-row gap-[3.2rem] md:gap-0">
             <div className="relative">
               <figure className="w-[31.115rem] md:w-full">
-                <img src={bgOne} alt="ingrediCheck" />
+                <img src={bgOne} alt="IngrediCheck app interface demonstrating food scanning and analysis features" />
               </figure>
               {/* <div className="bg-white/70 backdrop-blur-[2.51636rem] shadow-[0_0_1.09985rem_rgba(0,0,0,0.1)] flex flex-col items-center gap-[.901rem] md:gap-[1.6rem] rounded-[.831rem] md:rounded-[1.32rem] max-w-[18.459rem] md:max-w-[29.3rem] h-[25.326rem] md:h-[40.2rem] pt-[1.481rem] md:pt-[2.3rem] absolute top-[12%] md:left-[13%] left-[18%]">
                 <div className="bg-green rounded-[.831rem] md:rounded-[1.32rem] translate-x-[.867rem] md:translate-x-[2.3rem] p-[1.3rem] md:p-[2rem] max-w-[18.823rem] md:max-w-[29.879rem] h-[14.949rem] md:h-[23.634rem] flex gap-[.847rem] md:gap-[1.3rem]">
@@ -70,7 +70,7 @@ const HomeAbout = () => {
           <div className="mt-[5.6rem] md:mt-[12rem] flex items-center justify-between flex-col md:flex-row-reverse gap-[3.2rem] md:gap-0">
             <div className="relative">
               <figure className="w-[31.115rem] md:w-full">
-                <img src={bgTwo} alt="ingrediCheck" />
+                <img src={bgTwo} alt="IngrediCheck app interface showing favorites and food discovery features" />
               </figure>
               {/* <div className="bg-white/70 backdrop-blur-[2.51636rem] shadow-[0_0_1.09985rem_rgba(0,0,0,0.1)] flex flex-col items-center gap-[.901rem] md:gap-[1.6rem] rounded-[.831rem] md:rounded-[1.32rem] max-w-[18.459rem] md:max-w-[29.3rem] h-[25.326rem] md:h-[40.2rem] pt-[1.481rem] md:pt-[2.3rem] absolute top-[12%] md:left-[13%] left-[18%]">
                 <div className="bg-green rounded-[.831rem] md:rounded-[1.32rem] translate-x-[.867rem] md:translate-x-[2.3rem] p-[1.3rem] md:p-[2rem] max-w-[18.823rem] md:max-w-[29.879rem] h-[14.949rem] md:h-[23.634rem] flex gap-[.847rem] md:gap-[1.3rem]">
@@ -119,11 +119,11 @@ const HomeAbout = () => {
           {/* 2nd end */}
         </div>
         <div className="absolute -bottom-[.1%] sm:bottom-0 w-full">
-          <img src="/bgs/ExcludeTwo.svg" alt="exclude" className="w-full" />
+          <img src="/bgs/ExcludeTwo.svg" alt="" className="w-full" />
           <img
             className="absolute left-[50%] top-[-50%] md:top-[-25%]  translate-x-[-50%] w-[20.7rem] md:w-[30rem] lg:w-[37.8rem] xl:w-[37.8rem] 2xl:w-[59.8rem]"
             src={meals}
-            alt="meals"
+            alt="Various food items and meals representing IngrediCheck's food scanning capabilities"
           />
         </div>
       </section>

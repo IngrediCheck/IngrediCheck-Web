@@ -8,12 +8,12 @@ const HomeBanner = () => {
           <div className="relative md:translate-x-[45%] md:translate-y-[-50%] ">
             <img
               src="/bgs/Line124.svg"
-              alt="I"
+              alt=""
               className="hidden md:inline-block absolute top-[-10%] md:top-[-5%] left-[-6%]"
             />
             <img
               src="/bgs/Line123.svg"
-              alt="I"
+              alt=""
               className="inline-block md:hidden absolute top-[-5%] left-[-6%] rotate-180 w-[3.3rem]"
             />
             <h1 className="font-fredoka font-bold text-white text-[4rem] lg:text-[6.2rem] leading-[1.3em]">
@@ -24,7 +24,7 @@ const HomeBanner = () => {
             </p>
             <div className="flex gap-[1.6rem] md:gap-[3.9rem]">
               <a href="https://apps.apple.com/us/app/ingredicheck/id6477521615">
-                <img src={appStore} alt="appStore" />
+                <img src={appStore} alt="Download IngrediCheck on the App Store" />
               </a>
             {/*
               <a href="#">
@@ -34,7 +34,7 @@ const HomeBanner = () => {
             </div>
             <img
               src="/bgs/banenrBgArrow.svg"
-              alt="I"
+              alt=""
               className="absolute top-[50%] -translate-y-[180%] right-[-30%] hidden  lg:inline-block"
             />
           </div>
@@ -43,7 +43,7 @@ const HomeBanner = () => {
             <figure className="">
               <img
                 src="/bgs/homeMobileTemp.png"
-                alt="ingrediCheck"
+                alt="IngrediCheck mobile app interface showing food scanning feature"
                 className="w-full"
               />
             </figure>
@@ -54,11 +54,11 @@ const HomeBanner = () => {
         <img
           className="absolute w-full"
           src="/bgs/ExcludeTemp.svg"
-          alt="ingrediCheck"
+          alt=""
         />
         <img
           src="/bgs/ExcludeWhite.svg"
-          alt="ingrediCheck"
+          alt=""
           className="w-full"
         />
       </div>

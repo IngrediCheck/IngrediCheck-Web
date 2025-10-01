@@ -71,7 +71,7 @@ const HomeSlider = () => {
                         <figure className="md:max-w-[47.2rem]">
                           <img
                             src={sliderImg1}
-                            alt="slider 1"
+                            alt="Geeta using IngrediCheck app to scan food products for dietary compatibility"
                             className="w-full"
                           />
                         </figure>

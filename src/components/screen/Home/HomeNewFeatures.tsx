@@ -24,7 +24,7 @@ const HomeNewFeatures = () => {
                   </p>
                   <img
                     src={item.bg}
-                    alt="new Features"
+                    alt=""
                     className="absolute right-0 top-0 w-[14.4rem] md:w-auto"
                   />
                 </li>

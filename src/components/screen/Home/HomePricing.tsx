@@ -5,7 +5,7 @@ const HomePricing = () => {
     <section className="h-[100vh] sm:h-[150vh]  md:h-[180vh] lg:h-auto lg:pb-[20rem] relative bg-[url(/bgs/goldBg.svg)] bg-no-repeat bg-cover flex items-center justify-center">
       <img
         src={goldEllipse}
-        alt="gold ellips"
+        alt=""
         className="hidden lg:block absolute left-[50%] top-0 translate-y-[-30%] translate-x-[-50%] -z-10"
       />
       <div className="container lg:pt-[30rem] z-30 relative ">

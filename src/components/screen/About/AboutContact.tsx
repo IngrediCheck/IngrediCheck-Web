@@ -26,28 +26,28 @@ const AboutContact = () => {
           <div>
             <img
               src={vector1}
-              alt="vector"
+              alt=""
               className="absolute top-0 left-[7%] md:block hidden"
             />
           </div>
           <div>
             <img
               src={vector2}
-              alt="vector"
+              alt=""
               className="absolute top-0 right-[0%] md:block hidden"
             />
           </div>
           <div>
             <img
               src={vector3}
-              alt="vector"
+              alt=""
               className="absolute top-0 left-[7%] md:hidden block"
             />
           </div>
           <div>
             <img
               src={vector4}
-              alt="vector"
+              alt=""
               className="absolute top-0 right-[0%] md:hidden block"
             />
           </div>

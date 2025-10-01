@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <Link to="/">
               <figure className="w-[10rem] md:w-[13.6rem]">
-                <img src={logo} alt="ingrediCheck" className="w-full" />
+                <img src={logo} alt="IngrediCheck logo" className="w-full" />
               </figure>
             </Link>
             {/* Desktop navitems start */}
