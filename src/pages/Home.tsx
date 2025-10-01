@@ -4,8 +4,11 @@ import HomeFeatures from "../components/screen/Home/HomeFeatures";
 import HomePricing from "../components/screen/Home/HomePricing";
 import HomeSlider from "../components/screen/Home/HomeSlider";
 import SEO from "../components/common/SEO";
+import { generateBreadcrumbSchema } from "../utils/breadcrumbSchema";
 
 const Home = () => {
+  const breadcrumbSchema = generateBreadcrumbSchema('/');
+  
   const softwareApplicationSchema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
@@ -41,7 +44,7 @@ const Home = () => {
         description="Scan food labels instantly to check if they fit your dietary needs. IngrediCheck makes grocery shopping pain-free for everyone with dietary restrictions, allergies, and food preferences."
         keywords="food scanner, dietary restrictions, food allergies, grocery shopping, ingredient checker, food safety, dietary preferences, barcode scanner, food app, scan food labels, dietary needs"
         url="https://ingredicheck.app/"
-        structuredData={softwareApplicationSchema}
+        structuredData={[breadcrumbSchema, softwareApplicationSchema]}
       />
       <HomeBanner />
       <section aria-label="About IngrediCheck">

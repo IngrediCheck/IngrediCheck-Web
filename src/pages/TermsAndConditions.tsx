@@ -1,6 +1,9 @@
 import SEO from "../components/common/SEO";
+import { generateBreadcrumbSchema } from "../utils/breadcrumbSchema";
 
 const TermsAndConditions = () => {
+  const breadcrumbSchema = generateBreadcrumbSchema('/terms-conditions');
+  
   return (
     <>
       <SEO
@@ -8,6 +11,7 @@ const TermsAndConditions = () => {
         description="Read IngrediCheck's terms and conditions to understand the legal terms of use for our food scanning app. Learn about user rights, responsibilities, and service agreements."
         keywords="terms and conditions, legal terms, user agreement, terms of use, service agreement, legal rights, user responsibilities, app terms"
         url="https://ingredicheck.app/terms-conditions"
+        structuredData={breadcrumbSchema}
       />
       <section>
         <div className="container px-[1.6rem] md:pl-[6.4rem] pb-[10rem] md:pb-[10.9rem]">
