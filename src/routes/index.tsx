@@ -5,7 +5,6 @@ import About from "../pages/About";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import ErrorPage from "../pages/ErrorPage";
-import Contact from "../pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -20,10 +19,6 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
       },
       {
         path: "/terms-conditions",
