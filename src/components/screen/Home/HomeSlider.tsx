@@ -52,7 +52,7 @@ const HomeSlider = () => {
               {[...Array(8)].map((_, i) => {
                 return (
                   <SwiperSlide key={i}>
-                    <div className="bg-green-extraLight w-full rounded-[2rem] py-[3.2rem] px-[5.15rem] md:p-[8rem]">
+                    <article className="bg-green-extraLight w-full rounded-[2rem] py-[3.2rem] px-[5.15rem] md:p-[8rem]">
                       <div className="text-green-dark">
                         <SectionHeading headign="Real Stories, Real Solutions" />
                       </div>
@@ -76,7 +76,7 @@ const HomeSlider = () => {
                           />
                         </figure>
                       </div>
-                    </div>
+                    </article>
                   </SwiperSlide>
                 );
               })}

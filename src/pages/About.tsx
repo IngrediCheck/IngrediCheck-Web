@@ -7,9 +7,15 @@ const About = () => {
   return (
     <>
       {/* <AboutBanner /> */}
-      <AboutFounder />
-      <AboutMission />
-      <AboutContact />
+      <section aria-label="About the Founder">
+        <AboutFounder />
+      </section>
+      <section aria-label="Our Mission">
+        <AboutMission />
+      </section>
+      <section aria-label="Contact Information">
+        <AboutContact />
+      </section>
     </>
   );
 };

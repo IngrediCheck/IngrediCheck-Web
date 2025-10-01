@@ -8,10 +8,18 @@ const Home = () => {
   return (
     <>
       <HomeBanner />
-      <HomeAbout />
-      <HomeFeatures />
-      <HomeSlider />
-      <HomePricing />
+      <section aria-label="About IngrediCheck">
+        <HomeAbout />
+      </section>
+      <section aria-label="App Features">
+        <HomeFeatures />
+      </section>
+      <section aria-label="User Testimonials">
+        <HomeSlider />
+      </section>
+      <section aria-label="Pricing Information">
+        <HomePricing />
+      </section>
     </>
   );
 };
