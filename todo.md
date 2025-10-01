@@ -18,7 +18,7 @@ For each todo item, follow this exact process:
 ### 0. **Broken Application Issues**
 - [x] Fix CSS class name error (`text-inter` should be `font-inter`)
 - [x] ~~Remove unused HomeNewFeatures import from Home page~~ - **NOT AN ISSUE**: No unused import found in Home.tsx
-- [ ] Add proper error boundaries to prevent app crashes
+- [x] Add proper error boundaries to prevent app crashes
 - [ ] Fix mobile navigation (no click-outside handler)
 - [ ] Complete Contact page with actual contact information
 - [ ] Add proper alt text to all images for accessibility
