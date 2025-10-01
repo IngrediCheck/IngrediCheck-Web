@@ -7,6 +7,7 @@ const HomePricing = () => {
         src={goldEllipse}
         alt=""
         className="hidden lg:block absolute left-[50%] top-0 translate-y-[-30%] translate-x-[-50%] -z-10"
+        loading="lazy"
       />
       <div className="container lg:pt-[30rem] z-30 relative ">
         <div className="text-green-dark">

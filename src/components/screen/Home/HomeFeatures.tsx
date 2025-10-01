@@ -20,6 +20,7 @@ const HomeFeatures = () => {
                     src={item.icon}
                     alt={item.title}
                     className="w-[4rem] md:w-[8rem]"
+                    loading="lazy"
                   />
                   <h3 className="font-bold text-dark-dark text-[1.6rem] md:text-[2.4rem]">
                     {item.title}

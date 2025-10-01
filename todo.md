@@ -67,7 +67,7 @@ For each todo item, follow this exact process:
   - [x] Banner images
   - [x] Feature icons
   - [x] Decorative elements
-- [ ] Implement lazy loading for below-the-fold images
+- [x] Implement lazy loading for below-the-fold images
 - [ ] Use responsive images with srcset
 - [ ] Add image preloading for critical above-the-fold images
 

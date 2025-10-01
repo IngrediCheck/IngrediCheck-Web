@@ -28,6 +28,7 @@ const AboutContact = () => {
               src={vector1}
               alt=""
               className="absolute top-0 left-[7%] md:block hidden"
+              loading="lazy"
             />
           </div>
           <div>
@@ -35,6 +36,7 @@ const AboutContact = () => {
               src={vector2}
               alt=""
               className="absolute top-0 right-[0%] md:block hidden"
+              loading="lazy"
             />
           </div>
           <div>
@@ -42,6 +44,7 @@ const AboutContact = () => {
               src={vector3}
               alt=""
               className="absolute top-0 left-[7%] md:hidden block"
+              loading="lazy"
             />
           </div>
           <div>
@@ -49,6 +52,7 @@ const AboutContact = () => {
               src={vector4}
               alt=""
               className="absolute top-0 right-[0%] md:hidden block"
+              loading="lazy"
             />
           </div>
         </div>

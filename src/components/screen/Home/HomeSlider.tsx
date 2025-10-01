@@ -73,6 +73,7 @@ const HomeSlider = () => {
                             src={sliderImg1}
                             alt="Geeta using IngrediCheck app to scan food products for dietary compatibility"
                             className="w-full"
+                            loading="lazy"
                           />
                         </figure>
                       </div>

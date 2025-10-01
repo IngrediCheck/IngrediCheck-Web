@@ -27,6 +27,7 @@ const HomeNewFeatures = () => {
                       src={item.bg}
                       alt=""
                       className="absolute right-0 top-0 w-[14.4rem] md:w-auto"
+                      loading="lazy"
                     />
                   </article>
                 </li>
