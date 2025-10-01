@@ -1,10 +1,18 @@
+import SEO from "../components/common/SEO";
+
 const TermsAndConditions = () => {
   return (
     <>
-    <section>
-      <div className="container px-[1.6rem] md:pl-[6.4rem] pb-[10rem] md:pb-[10.9rem]">
-        <div className="flex flex-col gap-y-[3.1rem] [&_h1]:font-inter [&_h1]:font-bold [&_h1]:text-[3rem] [&_h1]:md:text-[4rem] [&_h1]:text-dark [&_h2]:font-inter [&_h2]:font-bold [&_h2]:text-[2rem] [&_h2]:md:text-[2.4rem] [&_h2]:text-dark [&_p]:font-inter [&_p]:text-[1.4rem] [&_p]:text-dark ">
-        <h1 className="mt-[3rem]">Terms And Conditions</h1>
+      <SEO
+        title="Terms and Conditions - IngrediCheck Legal Terms of Use"
+        description="Read IngrediCheck's terms and conditions to understand the legal terms of use for our food scanning app. Learn about user rights, responsibilities, and service agreements."
+        keywords="terms and conditions, legal terms, user agreement, terms of use, service agreement, legal rights, user responsibilities, app terms"
+        url="https://ingredicheck.app/terms-conditions"
+      />
+      <section>
+        <div className="container px-[1.6rem] md:pl-[6.4rem] pb-[10rem] md:pb-[10.9rem]">
+          <div className="flex flex-col gap-y-[3.1rem] [&_h1]:font-inter [&_h1]:font-bold [&_h1]:text-[3rem] [&_h1]:md:text-[4rem] [&_h1]:text-dark [&_h2]:font-inter [&_h2]:font-bold [&_h2]:text-[2rem] [&_h2]:md:text-[2.4rem] [&_h2]:text-dark [&_p]:font-inter [&_p]:text-[1.4rem] [&_p]:text-dark ">
+          <h1 className="mt-[3rem]">Terms And Conditions</h1>
         <p>Last Updated: May 15, 2024</p>
 <p>Please read these Terms of Use, including those set forth in the Privacy Policy, which is hereby incorporated by reference (together, the "<strong>Terms</strong>") carefully <strong>before</strong> using the IngrediCheck application (the "<strong>App</strong>") and https://ingredicheck.app/ (the "<strong>Site</strong>").</p>
 <p>These Terms are a contract entered into between You ("<strong>you</strong>," "<strong>your</strong>," "<strong>yours</strong>") and FUNGEE LLC ("<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>," "<strong>FUNGEE LLC</strong>"). These Terms govern your use of and access to the App and Site, including any content, functionality, and services offered on or through them (the "<strong>Services</strong>"). These Terms apply to all visitors, users and others who wish to access or use the App and/or Site.</p>
