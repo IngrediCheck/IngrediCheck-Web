@@ -20,8 +20,8 @@ const Home = () => {
     operatingSystem: 'iOS 16.0 or later',
     url: 'https://ingredicheck.app/',
     downloadUrl: 'https://apps.apple.com/us/app/ingredicheck/id6477521615',
-    image: 'https://www.ingredicheck.app/bgs/homeMobileTemp.png',
-    screenshot: ['https://www.ingredicheck.app/bgs/homeMobileTemp.png'],
+    image: 'https://www.ingredicheck.app/bgs/homeMobileTemp.webp',
+    screenshot: ['https://www.ingredicheck.app/bgs/homeMobileTemp.webp'],
     publisher: {
       '@type': 'Organization',
       name: 'FUNGEE LLC',

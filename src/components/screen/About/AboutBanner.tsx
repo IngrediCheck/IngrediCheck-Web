@@ -1,6 +1,6 @@
 const AboutBanner = () => {
   return (
-    <section className="bg-[url(/bgs/homeBannerTemp.jpg)] bg-no-repeat bg-cover bg-center rounded-b-[1.3rem] md:rounded-b-[1.3rem]">
+    <section className="bg-[url(/bgs/homeBannerTemp.webp)] bg-no-repeat bg-cover bg-center rounded-b-[1.3rem] md:rounded-b-[1.3rem]">
       <div className="container flex flex-col items-start sm:items-center ">
         <div className="py-11">
           <h1 className="font-fredoka font-medium text-white text-[4rem] lg:text-[6.2rem] leading-[1.3em]">
