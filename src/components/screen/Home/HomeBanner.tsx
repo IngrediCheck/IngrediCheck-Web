@@ -43,6 +43,8 @@ const HomeBanner = () => {
             <figure className="">
               <img
                 src="/bgs/homeMobileTemp.webp"
+                srcSet="/bgs/homeMobileTemp-sm.webp 400w, /bgs/homeMobileTemp-md.webp 768w, /bgs/homeMobileTemp-lg.webp 1200w, /bgs/homeMobileTemp.webp 1738w"
+                sizes="(max-width: 640px) 400px, (max-width: 1024px) 768px, (max-width: 1536px) 1200px, 1738px"
                 alt="IngrediCheck mobile app interface showing food scanning feature"
                 className="w-full"
               />
