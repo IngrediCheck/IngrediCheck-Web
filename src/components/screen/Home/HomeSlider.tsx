@@ -58,9 +58,9 @@ const HomeSlider = () => {
                       </div>
                       <div className="mt-[1.9rem] md:mt-[4.1rem] flex lg:items-center justify-between flex-col-reverse lg:flex-row">
                         <div className="lg:w-[40%] mt-[3.1rem] lg:mt-0">
-                          <h4 className="font-fredoka font-semibold text-dark-dark2 text-[1.6rem] md:text-[3.6rem]">
+                          <h3 className="font-fredoka font-semibold text-dark-dark2 text-[1.6rem] md:text-[3.6rem]">
                             Geeta's Unique Diet {i}
-                          </h4>
+                          </h3>
                           <p className="mt-[1rem] md:mt-[2.2rem] text-dark-dark2 text-[1.4rem] md:text-[1.8rem] leading-[1.8rem] md:leading-[3rem] lg:max-w-[37.1rem]">
                             Following the Jain diet, Geeta avoids a variety of
                             common foods, including root vegetables. With her

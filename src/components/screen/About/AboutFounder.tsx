@@ -6,9 +6,9 @@ const AboutFounder = () => {
       <div className="container">
         <div className="md:max-w-[78rem] mx-auto py-[5.6rem] md:pt-[6.9rem] md:pb-[14.5rem] px-[1.6rem] lg:px-0 [&_p]:text-dark [&_p]:mt-[2.17rem] [&_p]:md:mt-[3.2rem] [&_p]:text-[1.4rem] [&_p]:md:text-[2rem] [&_p]:leading-[2.02rem] [&_p]:md:leading-[3.2rem]">
           <div className="text-center">
-            <h2 className="font-fredoka font-semibold text-[2.2rem] md:text-[3.65rem] text-green-dark">
+            <h1 className="font-fredoka font-semibold text-[2.2rem] md:text-[3.65rem] text-green-dark">
               About me
-            </h2>
+            </h1>
           </div>
           <div className="text-center">
             <div className="w-[12rem] h-[12rem] md:w-[15.5rem] md:h-[15.5rem] flex justify-center items-center rounded-full mx-auto bg-[linear-gradient(281.71deg,_#96CB02_16.78%,_#FAB222_73.53%)] mt-[2.4rem] md:mt-[3rem] [&_p]:font-inter">

@@ -8,9 +8,9 @@ const AboutContact = () => {
     <section>
       <div className="container py-[4.8rem] md:py-[10rem] ">
         <div className="bg-green-light bg-no-repeat bg-cover bg-center pt-[6rem] pb-[8.3rem] px-[1.6rem] lg:px-0 rounded-[20px] relative">
-          <h3 className="font-fredoka font-medium text-[2.4rem] md:text-[4rem] text-white text-center">
+          <h2 className="font-fredoka font-medium text-[2.4rem] md:text-[4rem] text-white text-center">
             Get in touch
-          </h3>
+          </h2>
           <div className="max-w-[87.8rem] mx-auto">
             <p className="text-white mt-[2.17rem] md:mt-[3.2rem] text-[1.4rem] md:text-[2rem] leading-[3.2rem]">
               For help with any Issues, email me at <Link to='mailto:support@ingredicheck.app' className="underline">support@ingredicheck.app</Link>.

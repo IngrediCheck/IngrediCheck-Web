@@ -4,7 +4,7 @@ const PrivacyTerms = () => {
   return (
     <section>
       <div className="container px-[1.6rem] md:pl-[6.4rem] pb-[10rem] md:pb-[10.9rem]">
-        <div className="flex flex-col gap-y-[3.1rem] [&_h3]:font-inter [&_h3]:font-bold [&_h3]:text-[2rem] [&_h3]:md:text-[2.4rem] [&_h3]:text-dark [&_h4]:font-inter [&_h4]:font-bold [&_h4]:text-[1.5rem] [&_h4]:md:text-[1.8rem] [&_h4]:text-dark [&_p]:font-inter [&_p]:text-[1.4rem] [&_p]:text-dark ">
+        <div className="flex flex-col gap-y-[3.1rem] [&_h2]:font-inter [&_h2]:font-bold [&_h2]:text-[2rem] [&_h2]:md:text-[2.4rem] [&_h2]:text-dark [&_h3]:font-inter [&_h3]:font-bold [&_h3]:text-[1.5rem] [&_h3]:md:text-[1.8rem] [&_h3]:text-dark [&_p]:font-inter [&_p]:text-[1.4rem] [&_p]:text-dark ">
 
           <div>
             <p>
@@ -18,59 +18,59 @@ const PrivacyTerms = () => {
             </p>
           </div>
           <div>
-            <h3>Information We Collect</h3>
+            <h2>Information We Collect</h2>
           </div>
           <div>
-            <h4>User Data</h4>
+            <h3>User Data</h3>
             <p className="mt-[2rem]">
                 We use <Link to='https://www.supabase.com' className='underline'>Supabase</Link> as a Backend for storing all user data. Supabase's Privacy Policy can be found <Link to='https://supabase.com/privacy' className="underline">here</Link>.
             </p>
           </div>
           <div>
-            <h4>User-Generated Content</h4>
+            <h3>User-Generated Content</h3>
             <p className="mt-[2rem]">
                 Users contribute content to a "Community Database" by taking pictures of packaged food items. This content is stored in our
                 Backend Database for processing and moderation. The content of the Community Database is made available to all our users.
             </p>
           </div>
           <div>
-            <h4>Usage Data</h4>
+            <h3>Usage Data</h3>
             <p className="mt-[2rem]">
                 We use anonymous analytics data provided by Apple.
             </p>
           </div>
           <div>
-            <h4>Payment Data and Purchase History</h4>
+            <h3>Payment Data and Purchase History</h3>
             <p className="mt-[2rem]">
               We use Apple as a payment provider for paid subscriptions. Apple's Privacy Policy can be found <Link to='https://www.apple.com/legal/privacy/en-ww/' className="underline">here</Link>.
             </p>
           </div>
           <div>
-            <h4>User and Device Identifiers</h4>
+            <h3>User and Device Identifiers</h3>
             <p className="mt-[2rem]">
               We use randomly generated identifiers in the App to anonymously identify devices and users. These identifiers may be synced to your other devices via your iCloud account. These identifiers are associated with data sent to our servers and other third parties, including Supabase and OpenAI.
             </p>
           </div>
           <div>
-            <h4>Technical Basics</h4>
+            <h3>Technical Basics</h3>
             <p className="mt-[2rem]">
               Our server software and any third-party services may store basic technical information, such as your IP address, in temporary memory or logs. This information is used for operation and maintenance purposes.
             </p>
           </div>
           <div>
-            <h4>Email</h4>
+            <h3>Email</h3>
             <p className="mt-[2rem]">
               If you email us for support or other feedback, the emails and email addresses will be retained. The email addresses will only be used to reply to the concerns or suggestions raised and will never be used for any marketing purpose.
             </p>
           </div>
           <div>
-            <h4>Cookies</h4>
+            <h3>Cookies</h3>
             <p className="mt-[2rem]">
               We do not use Cookies on our Site or App.
             </p>
           </div>
           <div>
-            <h3>Information Usage</h3>
+            <h2>Information Usage</h2>
             <p className="mt-[2rem]">
                 We use the information we collect ("Personal Data") to operate and improve the Site, the App, and customer support.
             </p>
@@ -82,31 +82,31 @@ const PrivacyTerms = () => {
             </p>
           </div>
           <div>
-            <h4>AI Provider</h4>
+            <h3>AI Provider</h3>
             <p className="mt-[2rem]">
               We use <Link to='https://www.openai.com' className='underline'>OpenAI</Link> as an AI provider for our service. OpenAI's Privacy Policy can be found <Link to='https://openai.com/policies/privacy-policy' className="underline">here</Link>.
             </p>
           </div>
           <div>
-            <h3>International Transfers of Information</h3>
+            <h2>International Transfers of Information</h2>
             <p className="mt-[2rem]">
                 Information may be processed, stored, and used outside of the country in which you are located. Data privacy laws vary across jurisdictions, and different laws may be applicable to your data depending on where it is processed, stored, or used.
             </p>
           </div>
           <div>
-            <h3>Your Consent</h3>
+            <h2>Your Consent</h2>
             <p className="mt-[2rem]">
                 By using the Site or the App, you consent to this privacy policy.
             </p>
           </div>
           <div>
-            <h3>Contacting Us</h3>
+            <h2>Contacting Us</h2>
             <p className="mt-[2rem]">
                 If you have questions regarding this privacy policy, you may email privacy@ingredicheck.app.
             </p>
           </div>
           <div>
-            <h3>Changes to This Policy</h3>
+            <h2>Changes to This Policy</h2>
             <p className="mt-[2rem]">
                 From time to time, we may change and/or update this Privacy Policy. We recommend you regularly review this page for updates.
             </p>
