@@ -29,9 +29,30 @@ const RootLayout = () => {
     },
   };
 
+  // WebSite schema - appears on all pages
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'IngrediCheck',
+    alternateName: 'IngrediCheck - Smart Food Scanner',
+    url: 'https://ingredicheck.app/',
+    description:
+      'IngrediCheck helps people with dietary restrictions and food allergies scan food labels to instantly verify if products fit their dietary needs.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'FUNGEE LLC',
+    },
+    inLanguage: 'en-US',
+    copyrightYear: 2024,
+    copyrightHolder: {
+      '@type': 'Organization',
+      name: 'FUNGEE LLC',
+    },
+  };
+
   return (
     <>
-      <SEO structuredData={organizationSchema} />
+      <SEO structuredData={[organizationSchema, websiteSchema]} />
       <header>
         <ErrorBoundary>
           <Navbar />

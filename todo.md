@@ -55,7 +55,7 @@ For each todo item, follow this exact process:
 - [x] Add Organization schema
   - [x] Company name, logo, contact info
   - [x] Social media profiles
-- [ ] Add WebSite schema with search action
+- [x] Add WebSite schema with search action
 - [ ] Add BreadcrumbList schema for navigation
 
 ### 3. **Image Optimization Issues**
