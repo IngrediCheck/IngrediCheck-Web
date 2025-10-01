@@ -52,9 +52,9 @@ For each todo item, follow this exact process:
   - [x] Download URL
   - [x] Screenshots
   - [x] Aggregate rating (if available)
-- [ ] Add Organization schema
-  - [ ] Company name, logo, contact info
-  - [ ] Social media profiles
+- [x] Add Organization schema
+  - [x] Company name, logo, contact info
+  - [x] Social media profiles
 - [ ] Add WebSite schema with search action
 - [ ] Add BreadcrumbList schema for navigation
 
