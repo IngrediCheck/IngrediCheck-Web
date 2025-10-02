@@ -72,16 +72,16 @@ For each todo item, follow this exact process:
 - [x] Add image preloading for critical above-the-fold images (hero image with responsive srcset, banner background)
 
 ### 4. **Missing Semantic HTML Structure**
-- [ ] Replace generic divs with semantic elements
-  - [ ] Use `<header>` for navigation
-  - [ ] Use `<main>` for main content
-  - [ ] Use `<section>` for content sections
-  - [ ] Use `<article>` for feature cards
-  - [ ] Use `<aside>` for sidebars
-  - [ ] Use `<footer>` for footer content
-- [ ] Add proper heading hierarchy (h1, h2, h3, etc.)
-- [ ] Use `<nav>` for navigation menus
-- [ ] Add ARIA labels where needed
+- [x] Replace generic divs with semantic elements - **COMPLETED**: All semantic elements implemented
+  - [x] Use `<header>` for navigation - **COMPLETED**: RootLayout.tsx wraps Navbar in <header>
+  - [x] Use `<main>` for main content - **COMPLETED**: RootLayout.tsx wraps Outlet in <main>
+  - [x] Use `<section>` for content sections - **COMPLETED**: Home, About, Terms pages use <section> with aria-labels
+  - [x] Use `<article>` for feature cards - **COMPLETED**: HomeFeatures, HomeSlider, HomeNewFeatures use <article>
+  - [x] Use `<aside>` for sidebars - **N/A**: Site design has no sidebars
+  - [x] Use `<footer>` for footer content - **COMPLETED**: RootLayout.tsx wraps Footer in <footer>
+- [x] Add proper heading hierarchy (h1, h2, h3, etc.) - **COMPLETED**: Fixed in section 0
+- [x] Use `<nav>` for navigation menus - **COMPLETED**: Navbar component uses <nav>
+- [x] Add ARIA labels where needed - **COMPLETED**: All sections have aria-label attributes
 
 ## ⚡ **Performance Optimizations (High Priority)**
 
@@ -102,14 +102,14 @@ For each todo item, follow this exact process:
 - [ ] Analyze bundle size with webpack-bundle-analyzer
 
 ### 7. **Missing Performance Optimizations**
-- [ ] Add preload hints for critical resources
-  - [ ] Preload hero image
-  - [ ] Preload critical fonts
+- [x] Add preload hints for critical resources - **PARTIALLY COMPLETED**: Images and fonts preloaded
+  - [x] Preload hero image - **COMPLETED**: Hero image with responsive srcset preloaded
+  - [x] Preload critical fonts - **COMPLETED**: Inter 400, 500 and Fredoka 700 preloaded
   - [ ] Preload main CSS file
 - [ ] Implement prefetching for likely next pages
-- [ ] Add resource hints (dns-prefetch, preconnect)
-  - [ ] Preconnect to Google Fonts
-  - [ ] Preconnect to external domains
+- [x] Add resource hints (dns-prefetch, preconnect) - **PARTIALLY COMPLETED**: Google Fonts preconnected
+  - [x] Preconnect to Google Fonts - **COMPLETED**: Added in index.html
+  - [x] Preconnect to external domains - **COMPLETED**: fonts.gstatic.com preconnected
 - [ ] Add service worker for caching
 - [ ] Implement critical CSS inlining
 
