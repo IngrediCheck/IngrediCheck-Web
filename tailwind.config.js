@@ -29,8 +29,8 @@ export default {
         },
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        fredoka: ["Fredoka", "sans-serif"],
+        inter: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+        fredoka: ["Fredoka", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
       },
       container: {
         center: true,
