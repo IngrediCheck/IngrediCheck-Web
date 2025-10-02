@@ -1,4 +1,5 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Suspense } from "react";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 import ErrorBoundary from "../components/common/ErrorBoundary";
@@ -62,7 +63,15 @@ const RootLayout = () => {
       <main>
         <ScrollRestoration />
         <ErrorBoundary>
-          <Outlet />
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center min-h-screen">
+                <div className="text-[2rem] text-green-dark font-inter">Loading...</div>
+              </div>
+            }
+          >
+            <Outlet />
+          </Suspense>
         </ErrorBoundary>
       </main>
 

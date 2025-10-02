@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
+import { lazy } from "react";
 import RootLayout from "../Layouts/RootLayout";
 import Home from "../pages/Home";
-import About from "../pages/About";
-import TermsAndConditions from "../pages/TermsAndConditions";
-import PrivacyPolicy from "../pages/PrivacyPolicy";
 import ErrorPage from "../pages/ErrorPage";
+
+// Lazy load non-critical pages
+const About = lazy(() => import("../pages/About"));
+const TermsAndConditions = lazy(() => import("../pages/TermsAndConditions"));
+const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 
 export const router = createBrowserRouter([
   {
