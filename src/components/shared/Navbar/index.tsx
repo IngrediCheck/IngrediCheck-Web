@@ -9,7 +9,7 @@ import {
 } from "../../../data/navigationData";
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLUListElement>(null);
   
   const toggleNav = () => {
     setNavOpen((pre) => !pre);
