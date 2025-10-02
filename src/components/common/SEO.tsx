@@ -20,7 +20,7 @@ export default function SEO({
   title = "IngrediCheck - Smart Food Scanner for Dietary Restrictions",
   description = "Scan food labels instantly to check if they fit your dietary needs. IngrediCheck makes grocery shopping pain-free for everyone with dietary restrictions, allergies, and food preferences.",
   keywords = "food scanner, dietary restrictions, food allergies, grocery shopping, ingredient checker, food safety, dietary preferences, barcode scanner, food app",
-  image = "/og-image.jpg",
+  image = "/bgs/og-image.jpg",
   url = "https://ingredicheck.app",
   type = "website",
   author = "FUNGEE LLC",
