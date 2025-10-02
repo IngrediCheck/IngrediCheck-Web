@@ -69,7 +69,7 @@ For each todo item, follow this exact process:
   - [x] Decorative elements
 - [x] Implement lazy loading for below-the-fold images
 - [x] Use responsive images with srcset (hero image: 400px/26KB, 768px/67KB, 1200px/122KB, 1738px/217KB)
-- [ ] Add image preloading for critical above-the-fold images
+- [x] Add image preloading for critical above-the-fold images (hero image with responsive srcset, banner background)
 
 ### 4. **Missing Semantic HTML Structure**
 - [ ] Replace generic divs with semantic elements
