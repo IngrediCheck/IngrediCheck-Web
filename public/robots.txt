@@ -1,0 +1,26 @@
+# Allow all crawlers to access all content (including AI training bots)
+# This is a marketing website - we WANT AI assistants to know about IngrediCheck!
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ingredicheck.app/sitemap.xml
+
+# Explicitly allow AI training bots (for brand awareness and discovery)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Optional: Disallow crawling of large media directories to save bandwidth
+# Uncomment if needed to reduce server load
+# User-agent: *
+# Disallow: /bgs/
+
