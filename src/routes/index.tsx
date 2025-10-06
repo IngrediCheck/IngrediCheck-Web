@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
 import RootLayout from "../Layouts/RootLayout";
@@ -8,6 +9,7 @@ import ErrorPage from "../pages/ErrorPage";
 const About = lazy(() => import("../pages/About"));
 const TermsAndConditions = lazy(() => import("../pages/TermsAndConditions"));
 const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
+const DeleteAccount = lazy(() => import("../pages/DeleteAccount"));
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
+      },
+      {
+        path: "/delete-account",
+        element: <DeleteAccount />,
       },
     ],
   },
