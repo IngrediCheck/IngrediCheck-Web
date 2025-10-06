@@ -49,6 +49,7 @@ const Footer = () => {
           <div className="font-semibold text-light-dark flex gap-[2.4rem] md:gap-[3.8rem] flex-col md:flex-row text-center">
             <Link to="/terms-conditions">Terms & Conditions</Link>
             <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/delete-account">Delete Account</Link>
           </div>
         </div>
       </div>

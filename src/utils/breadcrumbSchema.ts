@@ -10,6 +10,7 @@ const routeMap: Record<string, string> = {
   '/about': 'About',
   '/terms-conditions': 'Terms & Conditions',
   '/privacy-policy': 'Privacy Policy',
+  '/delete-account': 'Delete Account',
 };
 
 export const generateBreadcrumbSchema = (pathname: string): JsonLd => {
@@ -31,4 +32,3 @@ export const generateBreadcrumbSchema = (pathname: string): JsonLd => {
     })),
   };
 };
-
