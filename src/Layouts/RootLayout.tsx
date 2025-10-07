@@ -4,6 +4,7 @@ import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 import ErrorBoundary from "../components/common/ErrorBoundary";
 import SEO from "../components/common/SEO";
+import { STORE_LINKS } from "../data/storefronts";
 
 const RootLayout = () => {
   // Organization schema - appears on all pages
@@ -20,7 +21,8 @@ const RootLayout = () => {
     foundingDate: '2024',
     sameAs: [
       'https://twitter.com/realsanketp',
-      'https://apps.apple.com/us/app/ingredicheck/id6477521615',
+      STORE_LINKS.apple.url,
+      STORE_LINKS.google.url,
     ],
     contactPoint: {
       '@type': 'ContactPoint',

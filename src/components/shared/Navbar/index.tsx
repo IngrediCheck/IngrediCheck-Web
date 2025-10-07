@@ -7,6 +7,7 @@ import {
   navigationData,
   navigationDataType,
 } from "../../../data/navigationData";
+import DownloadMenu from "../DownloadMenu";
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLUListElement>(null);
@@ -34,11 +35,11 @@ const Navbar = () => {
                   </li>
                 );
               })}
-              <li className="">
-                <button className="bg-green-light text-white text-[1.6rem] capitalize font-medium rounded-[3.2rem] w-[12.5rem] h-[5.4rem]"
-                        onClick={() => window.location.href = 'https://apps.apple.com/us/app/ingredicheck/id6477521615'}>
-                  Download
-                </button>
+              <li>
+                <DownloadMenu
+                  align="right"
+                  buttonClassName="w-[12.5rem]"
+                />
               </li>
             </ul>
             {/* Desktop navitems end */}
@@ -73,10 +74,11 @@ const Navbar = () => {
                 );
               })}
               <li className="w-full">
-                <button className="bg-green-light text-white text-[1.6rem] capitalize font-medium rounded-[3.2rem] w-[12.5rem] h-[5.4rem]"
-                        onClick={() => window.location.href = 'https://apps.apple.com/us/app/ingredicheck/id6477521615'}>
-                    Download
-                </button>
+                <DownloadMenu
+                  containerClassName="w-[12.5rem]"
+                  buttonClassName="w-full"
+                  onSelect={() => setNavOpen(false)}
+                />
               </li>
             </ul>
           </>

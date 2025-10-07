@@ -1,5 +1,4 @@
-import appStore from "../../../assets/images/i/appStore.svg";
-// import googlePlay from "../../../assets/images/i/googlePlay.svg";
+import { STOREFRONTS } from "../../../data/storefronts";
 const HomeBanner = () => {
   return (
     <section className="bg-[url(/bgs/homeBannerTemp.webp)] bg-no-repeat bg-cover bg-center relative overflow-hidden">
@@ -22,15 +21,20 @@ const HomeBanner = () => {
             <p className="font-inter text-white text-[2rem] max-w-[25.3rem] md:max-w-[49.9rem] leading-[3.2rem] mt-[4rem] lg:mt-[2.4rem] lg:mb-[3rem] mb-[4rem]">
               The pain-free way to shop for everyone's tastes and dietary needs.
             </p>
-            <div className="flex gap-[1.6rem] md:gap-[3.9rem]">
-              <a href="https://apps.apple.com/us/app/ingredicheck/id6477521615">
-                <img src={appStore} alt="Download IngrediCheck on the App Store" />
-              </a>
-            {/*
-              <a href="#">
-                <img src={googlePlay} alt="googlePlay" />
-              </a>
-            */}
+            <div className="flex gap-[1.6rem] md:gap-[3.9rem] flex-wrap">
+              {STOREFRONTS.map((store) => (
+                <a
+                  key={store.id}
+                  href={store.url}
+                  className="inline-flex"
+                >
+                  <img
+                    src={store.badgeSrc}
+                    alt={store.badgeAlt}
+                    className="h-[5.2rem] w-auto"
+                  />
+                </a>
+              ))}
             </div>
             <img
               src="/bgs/banenrBgArrow.svg"

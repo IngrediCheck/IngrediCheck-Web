@@ -5,6 +5,7 @@ import HomePricing from "../components/screen/Home/HomePricing";
 import HomeSlider from "../components/screen/Home/HomeSlider";
 import SEO from "../components/common/SEO";
 import { generateBreadcrumbSchema } from "../utils/breadcrumbSchema";
+import { STORE_LINKS } from "../data/storefronts";
 
 const Home = () => {
   const breadcrumbSchema = generateBreadcrumbSchema('/');
@@ -17,9 +18,9 @@ const Home = () => {
       'IngrediCheck is a smart food label scanner that helps people with dietary restrictions and allergies quickly verify if products fit their needs.',
     applicationCategory: 'HealthApplication',
     applicationSubCategory: 'MobileApplication',
-    operatingSystem: 'iOS 16.0 or later',
+    operatingSystem: 'iOS 16.0 or later, Android 10.0 or later',
     url: 'https://ingredicheck.app/',
-    downloadUrl: 'https://apps.apple.com/us/app/ingredicheck/id6477521615',
+    downloadUrl: [STORE_LINKS.apple.url, STORE_LINKS.google.url],
     image: 'https://www.ingredicheck.app/bgs/homeMobileTemp.webp',
     screenshot: ['https://www.ingredicheck.app/bgs/homeMobileTemp.webp'],
     publisher: {
@@ -32,7 +33,7 @@ const Home = () => {
       price: '0',
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
-      url: 'https://apps.apple.com/us/app/ingredicheck/id6477521615',
+      url: STORE_LINKS.apple.url,
     },
     inLanguage: 'en',
   };

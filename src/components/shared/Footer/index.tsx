@@ -5,6 +5,7 @@ import {
   navigationData,
   navigationDataType,
 } from "../../../data/navigationData";
+import { STOREFRONTS } from "../../../data/storefronts";
 
 const Footer = () => {
   return (
@@ -25,10 +26,20 @@ const Footer = () => {
                 </li>
               );
             })}
-            <li className="nav-links w-[14rem] text-center ">
-              <Link to="https://apps.apple.com/us/app/ingredicheck/id6477521615" className="text-light-dark font-semibold">
-                Download
-              </Link>
+            <li className="flex items-center justify-center gap-[1.6rem] flex-wrap" aria-label="Download IngrediCheck">
+              {STOREFRONTS.map((store) => (
+                <a
+                  key={store.id}
+                  href={store.url}
+                  className="inline-flex"
+                >
+                  <img
+                    src={store.badgeSrc}
+                    alt={store.badgeAlt}
+                    className="h-[3.6rem] w-auto"
+                  />
+                </a>
+              ))}
             </li>
           </ul>
           <div className="flex items-center gap-[3.7rem]">
