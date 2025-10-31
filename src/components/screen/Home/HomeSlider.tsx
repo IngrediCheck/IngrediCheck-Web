@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { SwiperRef } from "swiper/react";
 import { useCallback, useRef } from "react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import SectionHeading from "../../common/SectionHeading";
@@ -11,10 +11,7 @@ import sliderImg1 from "../../../assets/images/sliderImg1.png";
 import HomeNewFeatures from "./HomeNewFeatures";
 
 const HomeSlider = () => {
-  interface SwiperInstance {
-    swiper: any;
-  }
-  const sliderRef = useRef<SwiperInstance | null>(null);
+  const sliderRef = useRef<SwiperRef | null>(null);
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
 
