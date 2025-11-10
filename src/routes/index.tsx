@@ -9,6 +9,7 @@ const About = lazy(() => import("../pages/About"));
 const TermsAndConditions = lazy(() => import("../pages/TermsAndConditions"));
 const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 const DeleteAccount = lazy(() => import("../pages/DeleteAccount"));
+const Waitlist = lazy(() => import("../pages/Waitlist"));
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/delete-account",
         element: <DeleteAccount />,
+      },
+      {
+        path: "/waitlist",
+        element: <Waitlist />,
       },
     ],
   },

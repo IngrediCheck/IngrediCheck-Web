@@ -8,26 +8,180 @@ font-family: "Inter", sans-serif;
 font-family: "Fredoka", sans-serif;
 */
 
-@layer {
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 82 45% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 82 55% 65%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 82 45% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 92%;
+    --ring: 82 45% 55%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(88 45% 55%) 0%, hsl(88 55% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(88 45% 97%) 100%);
+    --gradient-button: linear-gradient(143.74deg, hsl(82 85% 44%) 21.16%, hsl(75 92% 29%) 68.87%);
+    --gradient-apple: linear-gradient(135deg, hsl(82 85% 44%) 0%, hsl(165 100% 35%) 50%, hsl(210 100% 50%) 100%);
+    --shadow-soft: 0 4px 24px -4px hsl(88 45% 55% / 0.12);
+    --shadow-glow: 0 8px 32px -8px hsl(88 45% 55% / 0.25);
+    --shadow-button: 0px 4px 11px hsl(0 0% 77% / 0.57), inset 0px 4px 5.7px hsl(77 87% 31%), inset 2px 9px 7.5px hsl(0 0% 93% / 0.25);
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 88 55% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 88 65% 62%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 88 45% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 88 45% 55%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(88 45% 55%) 0%, hsl(88 55% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(88 15% 15%) 100%);
+    --gradient-button: linear-gradient(143.74deg, hsl(82 85% 44%) 21.16%, hsl(75 92% 29%) 68.87%);
+    --gradient-apple: linear-gradient(135deg, hsl(82 85% 44%) 0%, hsl(165 100% 35%) 50%, hsl(210 100% 50%) 100%);
+    --shadow-soft: 0 4px 24px -4px hsl(88 45% 55% / 0.2);
+    --shadow-glow: 0 8px 32px -8px hsl(88 45% 55% / 0.35);
+    --shadow-button: 0px 4px 11px hsl(0 0% 77% / 0.57), inset 0px 4px 5.7px hsl(77 87% 31%), inset 2px 9px 7.5px hsl(0 0% 93% / 0.25);
+  }
+
   html {
     @apply !text-[62.5%] scroll-smooth;
-    /* 1rem = 10px */
   }
-  bodY {
+
+  html.waitlist-root {
+    font-size: 100% !important;
+  }
+
+  body {
     @apply font-inter bg-orang/20 bg-[url(/bgs/lineBg.svg)];
   }
+
+  body.waitlist-page {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    background-image: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  }
 }
+
+@layer components {
+  .nav-links {
+    @apply text-[1.6rem] text-dark-light capitalize font-medium duration-75 transition-all hover:text-dark;
+  }
+
+  .mb-nav-links {
+    @apply nav-links !text-[#3B5266];
+  }
+
+  .active {
+    @apply text-[#3B5266] md:text-dark font-bold;
+  }
+
+  .btn-premium {
+    background: var(--gradient-button);
+    box-shadow: var(--shadow-button);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+    font-weight: 600;
+    filter: brightness(1);
+    transition: filter 0.2s ease, transform 0.2s ease;
+  }
+
+  .btn-premium:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
-}
-/* Navbar */
-
-.nav-links {
-  @apply text-[1.6rem] text-dark-light capitalize font-medium duration-75 transition-all hover:text-dark;
-}
-.mb-nav-links {
-  @apply nav-links !text-[#3B5266];
-}
-.active {
-  @apply text-[#3B5266] md:text-dark font-bold;
 }

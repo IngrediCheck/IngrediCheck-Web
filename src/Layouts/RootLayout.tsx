@@ -1,4 +1,4 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import { Suspense } from "react";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
@@ -53,14 +53,19 @@ const RootLayout = () => {
     },
   };
 
+  const { pathname } = useLocation();
+  const isWaitlistPage = pathname === "/waitlist";
+
   return (
     <>
       <SEO structuredData={[organizationSchema, websiteSchema]} />
+      {!isWaitlistPage && (
       <header>
         <ErrorBoundary>
           <Navbar />
         </ErrorBoundary>
       </header>
+      )}
 
       <main>
         <ScrollRestoration />
@@ -77,11 +82,13 @@ const RootLayout = () => {
         </ErrorBoundary>
       </main>
 
+      {!isWaitlistPage && (
       <footer>
         <ErrorBoundary>
           <Footer />
         </ErrorBoundary>
       </footer>
+      )}
     </>
   );
 };
