@@ -25,7 +25,7 @@ import heroPhoneImg from "../assets/hero-phone.png";
 import familyProfileImg from "../assets/family-profile.png";
 import allergenSelectionImg from "../assets/allergen-selection.png";
 import ingredibotImg from "../assets/ingredibot.png";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/images/ingredCheckLogo.svg";
 
 const EMAIL_MAX_LEN = 255;
 

@@ -36,7 +36,7 @@ const Navbar = () => {
                 );
               })}
               <li className="nav-links">
-                <NavLink to="/waitlist">Join Waitlist</NavLink>
+                <NavLink to="/waitlist">V2 Waitlist</NavLink>
               </li>
               <li>
                 <DownloadMenu
@@ -80,7 +80,7 @@ const Navbar = () => {
                 className="mb-nav-links"
                 onClick={() => setNavOpen(false)}
               >
-                <NavLink to="/waitlist">Join Waitlist</NavLink>
+                <NavLink to="/waitlist">V2 Waitlist</NavLink>
               </li>
               <li className="w-full">
                 <DownloadMenu
